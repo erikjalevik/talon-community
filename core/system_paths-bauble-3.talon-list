@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: bauble-3
+-
+user: /Users/erik
+desktop: /Users/erik/Desktop
+desk: /Users/erik/Desktop
+documents: /Users/erik/Documents
+docks: /Users/erik/Documents
+downloads: /Users/erik/Downloads
+music: /Users/erik/Music
+pictures: /Users/erik/Pictures
+videos: /Users/erik/Videos
+talon home: /Users/erik/.talon
+talon recordings: /Users/erik/.talon/recordings
+talon user: /Users/erik/.talon/user
+home: /Users/erik

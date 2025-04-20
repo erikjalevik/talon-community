@@ -1,6 +1,6 @@
 list: user.arrow_key
 -
-down: down
+don: down
 left: left
 right: right
-up: up
+sup: up

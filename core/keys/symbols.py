@@ -57,8 +57,8 @@ symbols = [
     Symbol("`", ["back tick"], ["grave"]),
     Symbol(",", ["comma", "coma"]),
     Symbol(".", ["period", "full stop"], ["dot", "point"]),
-    Symbol(";", ["semicolon"]),
-    Symbol(":", ["colon"]),
+    Symbol(";", ["semi"]),
+    Symbol(":", ["cold cut"]),
     Symbol("?", ["question mark"], ["question"]),
     Symbol("!", ["exclamation mark", "exclamation point"], ["bang"]),
     Symbol("*", ["asterisk"], ["star"]),
@@ -83,8 +83,8 @@ symbols = [
     Symbol(">", None, ["rangle", "R angle", "right angle", "greater than"]),
     Symbol("^", None, ["caret"]),
     Symbol("|", None, ["pipe"]),
-    Symbol("'", None, ["quote", "apostrophe"]),
-    Symbol('"', None, ["dub quote", "double quote"]),
+    Symbol("'", None, ["sing quote", "apostrophe"]),
+    Symbol('"', None, ["quote", "double quote"]),
 ]
 
 # by convention, symbols should include currency symbols

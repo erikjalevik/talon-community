@@ -382,7 +382,7 @@ class UserActions:
     def replace(text: str):
         """Search and replaces in the active editor"""
         if is_mac:
-            actions.key("alt-cmd-f")
+            actions.key("cmd-h")
         else:
             actions.key("ctrl-h")
 

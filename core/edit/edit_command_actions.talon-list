@@ -6,8 +6,8 @@ go before: goBefore
 go after: goAfter
 
 copy: copyToClipboard
-cut: cutToClipboard
-paste: pasteFromClipboard
-paste to: pasteFromClipboard
+cutty: cutToClipboard
+pasty: pasteFromClipboard
+pasty to: pasteFromClipboard
 
 clear: delete

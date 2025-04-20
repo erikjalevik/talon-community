@@ -3,10 +3,10 @@ app: firefox
 tag(): browser
 tag(): user.tabs
 
-tab search:
+(tab | tub | top) search:
     browser.focus_address()
     insert("% ")
-tab search <user.text>$:
+(tab | tub | top) search <user.text>$:
     browser.focus_address()
     insert("% {text}")
     key(down)

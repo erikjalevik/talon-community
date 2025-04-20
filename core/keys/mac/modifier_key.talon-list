@@ -4,9 +4,14 @@ os: mac
 
 alt: alt
 control: ctrl
+troll: ctrl
 shift: shift
-super: cmd
-command: cmd
+#super: cmd
+demand: cmd
+man: cmd
 option: alt
-function: fn
+chen: alt
+chon: alt
+chun: alt
+#function: fn
 globe: fn

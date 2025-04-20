@@ -1,21 +1,21 @@
 code.language: markdown
 -
-(level | heading | header) one:
+(heading) one:
     edit.line_start()
     "# "
-(level | heading | header) two:
+(heading) two:
     edit.line_start()
     "## "
-(level | heading | header) three:
+(heading) three:
     edit.line_start()
     "### "
-(level | heading | header) four:
+(heading) four:
     edit.line_start()
     "#### "
-(level | heading | header) five:
+(heading) five:
     edit.line_start()
     "##### "
-(level | heading | header) six:
+(heading) six:
     edit.line_start()
     "###### "
 
@@ -44,3 +44,7 @@ list six:
 link:
     "[]()"
     key(left:3)
+
+bullet: "- "
+checkbox: "- [ ] "
+checkbox (checked | check): "- [x] "
