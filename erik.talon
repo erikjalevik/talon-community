@@ -39,3 +39,4 @@ chat switch: key(ctrl-=)
 
 # Other
 to be done: "// TODO: "
+shortcat: key("shift-cmd-space")
