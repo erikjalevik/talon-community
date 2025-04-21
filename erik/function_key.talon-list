@@ -1,23 +1,22 @@
 list: user.function_key
 os: mac
 -
-funky one: f1
-funky two: f2
-funky three: f3
-funky four: f4
-funky five: f5
-funky six: f6
-funky seven: f7
-funky eight: f8
-funky nine: f9
-funky ten: f10
-funky eleven: f11
-funky twelve: f12
-funky thirteen: f13
-funky fourteen: f14
-funky fifteen: f15
-funky sixteen: f16
-funky seventeen: f17
-funky eighteen: f18
-funky nineteen: f19
-funky twenty: f20
+flag one: f1
+flag two: f2
+flag three: f3
+flag four: f4
+flag five: f5
+flag six: f6
+flag seven: f7
+flag eight: f8
+flag nine: f9
+flag ten: f10
+flag eleven: f11
+flag twelve: f12
+flag thirteen: f13
+flag fourteen: f14
+flag fifteen: f15
+flag sixteen: f16
+flag seventeen: f17
+flag eighteen: f18
+flag nineteen: f19
