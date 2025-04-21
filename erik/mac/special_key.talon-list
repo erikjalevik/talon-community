@@ -1,18 +1,19 @@
 list: user.special_key
 os: mac
+language: en
 -
 
-end: end
-home: home
+endy: end
+homey: home
 minus: minus
-return: return
+slap: return
 enter: keypad_enter
 page down: pagedown
+page don: pagedown
 page up: pageup
+page sup: pageup
 escape: escape
 space: space
-tab: tab
-insert: insert
-wipe: backspace
-delete: backspace
-forward delete: delete
+took: tab
+back: backspace
+pinch: delete

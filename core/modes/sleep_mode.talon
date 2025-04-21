@@ -1,3 +1,4 @@
+language: no_NO
 mode: sleep
 -
 settings():
@@ -30,7 +31,7 @@ settings():
 # means that these won't recognize. The (+) handles this case, so if you say
 # <pause> "talon wake talon wake" <pause>, it'll still work.
 
-# ^(welcome back)+$:
-#     user.mouse_wake()
-#     user.history_enable()
-#     user.talon_mode()
+^(welcome back)+$:
+    user.mouse_wake()
+    user.history_enable()
+    user.talon_mode()

@@ -1,12 +1,14 @@
 list: user.modifier_key
 os: mac
+language: en
 -
 
 alt: alt
 control: ctrl
+troll: ctrl
 shift: shift
-super: cmd
-command: cmd
+man: cmd
 option: alt
-function: fn
+chen: alt
+chun: alt
 globe: fn

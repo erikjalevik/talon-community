@@ -1,4 +1,5 @@
 tag: browser
+language: no_NO
 -
 tag(): user.address
 tag(): user.find
@@ -6,7 +7,7 @@ tag(): user.navigation
 
 go page | page focus: browser.focus_page()
 
-#go home: browser.go_home()
+go home: browser.go_home()
 go private: browser.open_private_window()
 
 bookmark it: browser.bookmark()

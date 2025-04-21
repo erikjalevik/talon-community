@@ -1,3 +1,5 @@
+language: no_NO
+-
 #provide both anchored and unachored commands via 'over'
 phrase <user.text>$:
     user.add_phrase_to_history(text)
@@ -18,7 +20,7 @@ phrase <user.text> {user.phrase_ender}:
 <user.formatters> (pace | paste): user.insert_formatted(clip.text(), formatters)
 recent list: user.toggle_phrase_history()
 recent close: user.phrase_history_hide()
-recent pick <number_small>:
+recent repeat <number_small>:
     recent_phrase = user.get_recent_phrase(number_small)
     user.add_phrase_to_history(recent_phrase)
     insert(recent_phrase)

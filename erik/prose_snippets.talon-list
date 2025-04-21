@@ -1,11 +1,9 @@
 list: user.prose_snippets
+os: mac
 -
 spacebar: " "
-new line: "\n"
-new paragraph: "\n\n"
+slap line: "\n"
+slap para: "\n\n"
 # Curly quotes are used to obtain proper spacing for left and right quotes, but will later be straightened.
 open quote: "“"
 close quote: "”"
-smiley: :-)
-winky: ;-)
-frowny: :-(

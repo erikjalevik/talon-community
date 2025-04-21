@@ -1,0 +1,7 @@
+list: user.word_formatter
+os: mac
+-
+
+token: NOOP
+word: TRAILING_SPACE
+proper: CAPITALIZE_FIRST_WORD

@@ -1,4 +1,5 @@
 list: user.delimiter_pair
+os: mac
 -
 
 # Format:
@@ -13,13 +14,8 @@ round: ( )
 box: [ ]
 diamond: < >
 curly: { }
-twin: "' '"
-quad: '" "'
+sticks: "' '"
+dogs: '" "'
 skis: ` `
 percentages: % %
 pad: space space
-
-escaped quad: '\\" \\"'
-escaped twin:  "\\' \\'"
-escaped round: \( \)
-escaped box: \[ \]

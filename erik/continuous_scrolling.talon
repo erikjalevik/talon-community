@@ -1,9 +1,9 @@
 tag: user.continuous_scrolling
-language: no_NO
+os: mac
 -
 <number_small>: user.mouse_scroll_set_speed(number_small)
 
-[wheel] stop: user.mouse_scroll_stop()
-[wheel] stop here:
+[spin] stop: user.mouse_scroll_stop()
+[spin] stop here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_stop()

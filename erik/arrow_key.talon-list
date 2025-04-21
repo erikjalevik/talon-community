@@ -1,6 +1,7 @@
 list: user.arrow_key
+os: mac
 -
-down: down
+don: down
 left: left
 right: right
-up: up
+sup: up

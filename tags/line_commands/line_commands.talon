@@ -1,79 +1,77 @@
 tag: user.line_commands
+language: no_NO
 -
 #this defines some common line commands. More may be defined that are ide-specific.
-# lend:
-#     user.deprecate_command("2024-07-30", "lend", "go line end | tail")
-#     edit.line_end()
-# bend:
-#     user.deprecate_command("2024-07-30", "bend", "go line start | head")
-#     edit.line_start()
-go line <number>: edit.jump_line(number)
-go line <number> end:
+lend:
+    user.deprecate_command("2024-07-30", "lend", "go line end | tail")
+    edit.line_end()
+bend:
+    user.deprecate_command("2024-07-30", "bend", "go line start | head")
+    edit.line_start()
+go <number>: edit.jump_line(number)
+go <number> end:
     edit.jump_line(number)
     edit.line_end()
-go line <number> home:
-    edit.jump_line(number)
-    edit.line_start()
-comment line <number>:
+comment [line] <number>:
     user.select_range(number, number)
     code.toggle_comment()
-comment line <number> until <number>:
+comment <number> until <number>:
     user.select_range(number_1, number_2)
     code.toggle_comment()
-clear line <number>:
+clear [line] <number>:
     user.select_range(number, number)
     edit.delete()
-clear line <number> until <number>:
+clear <number> until <number>:
     user.select_range(number_1, number_2)
     edit.delete()
-copy line <number>:
+copy [line] <number>:
     user.select_range(number, number)
     edit.copy()
-copy line <number> until <number>:
+copy <number> until <number>:
     user.select_range(number_1, number_2)
     edit.copy()
-cutty line <number>:
+cut [line] <number>:
     user.select_range(number, number)
     edit.cut()
-cutty line <number> until <number>:
+cut [line] <number> until <number>:
     user.select_range(number_1, number_2)
     edit.cut()
-(pasty | replace) line <number> until <number>:
+(paste | replace) <number> until <number>:
     user.select_range(number_1, number_2)
     edit.paste()
-(select | cell | sell) line <number>: user.select_range(number, number)
-(select | cell | sell) line <number> until <number>: user.select_range(number_1, number_2)
-#tab that: edit.indent_more()
-#tab line <number>:
-#    edit.jump_line(number)
-#    edit.indent_more()
-#tab <number> until <number>:
-#    user.select_range(number_1, number_2)
-#    edit.indent_more()
-#retab that: edit.indent_less()
-#retab line <number>:
-#    user.select_range(number, number)
-#    edit.indent_less()
-#retab <number> until <number>:
-#    user.select_range(number_1, number_2)
-#    edit.indent_less()
-drag line (down | don | done): edit.line_swap_down()
-drag line (up | sup): edit.line_swap_up()
-drag up line <number>:
+(select | cell | sell) [line] <number>: user.select_range(number, number)
+(select | cell | sell) <number> until <number>: user.select_range(number_1, number_2)
+tab that: edit.indent_more()
+tab [line] <number>:
+    edit.jump_line(number)
+    edit.indent_more()
+tab <number> until <number>:
+    user.select_range(number_1, number_2)
+    edit.indent_more()
+retab that: edit.indent_less()
+retab [line] <number>:
+    user.select_range(number, number)
+    edit.indent_less()
+retab <number> until <number>:
+    user.select_range(number_1, number_2)
+    edit.indent_less()
+drag [line] down: edit.line_swap_down()
+drag [line] up: edit.line_swap_up()
+drag up [line] <number>:
     user.select_range(number, number)
     edit.line_swap_up()
 drag up <number> until <number>:
     user.select_range(number_1, number_2)
     edit.line_swap_up()
-drag (down | don | done) line <number>:
+drag down [line] <number>:
     user.select_range(number, number)
     edit.line_swap_down()
-drag (down | don | done) <number> until <number>:
+drag down <number> until <number>:
     user.select_range(number_1, number_2)
     edit.line_swap_down()
-clone line <number>: user.line_clone(number)
+clone [line] <number>: user.line_clone(number)
 
-# select camel left: user.extend_camel_left()
-# select camel right: user.extend_camel_right()
-# go camel left: user.camel_left()
-# go camel right: user.camel_right()
+select camel left: user.extend_camel_left()
+select camel right: user.extend_camel_right()
+go camel left: user.camel_left()
+go camel right: user.camel_right()

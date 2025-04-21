@@ -1,9 +1,9 @@
 phones <user.homophones_canonical>: user.homophones_show(homophones_canonical)
-phones: user.homophones_show_auto()
+phones that: user.homophones_show_auto()
 phones force <user.homophones_canonical>:
     user.homophones_force_show(homophones_canonical)
 phones force: user.homophones_force_show_selection()
-phones (hide | exit): user.homophones_hide()
+phones hide: user.homophones_hide()
 phones word:
     edit.select_word()
     user.homophones_show_selection()
