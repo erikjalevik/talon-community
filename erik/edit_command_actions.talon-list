@@ -3,12 +3,3 @@ os: mac
 -
 
 select: select
-go before: goBefore
-go after: goAfter
-
-copy: copyToClipboard
-cutty: cutToClipboard
-pasty: pasteFromClipboard
-pasty to: pasteFromClipboard
-
-clear: delete

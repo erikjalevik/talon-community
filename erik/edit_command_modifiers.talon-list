@@ -1,0 +1,10 @@
+list: user.edit_modifier
+os: mac
+-
+all: document
+paragraph: paragraph
+line: line
+way left: lineStart
+way right: lineEnd
+way up: fileStart
+way down: fileEnd
