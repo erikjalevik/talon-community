@@ -3,17 +3,13 @@ os: mac
 -
 tag(): user.find
 
-hunt all: user.find_everywhere("")
-hunt all <user.text>: user.find_everywhere(text)
-hunt case: user.find_toggle_match_by_case()
-hunt word: user.find_toggle_match_by_word()
-hunt expression: user.find_toggle_match_by_regex()
-
 replace [<user.text>]: user.replace(text or "")
-replace all: user.replace_everywhere("")
-replace <user.text> all: user.replace_everywhere(text)
-replace confirm that: user.replace_confirm()
-replace confirm all: user.replace_confirm_all()
+
+search: user.find_everywhere("")
+search <user.text>: user.find_everywhere(text)
+
+search replace: user.replace_everywhere("")
+search replace <user.text>: user.replace_everywhere(text)
 
 go previous <user.text> [over]:
     user.select_previous_occurrence(text)
