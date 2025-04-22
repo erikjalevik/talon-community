@@ -381,21 +381,15 @@ class UserActions:
 
     def replace(text: str):
         """Search and replaces in the active editor"""
-        if is_mac:
-            actions.key("alt-cmd-f")
-        else:
-            actions.key("ctrl-h")
+        actions.user.vscode("editor.action.startFindReplaceAction")
 
         if text:
             actions.insert(text)
 
     def replace_everywhere(text: str):
         """Search and replaces in the entire project"""
-        if is_mac:
-            actions.key("cmd-shift-h")
-        else:
-            actions.key("ctrl-shift-h")
-
+        actions.user.vscode("workbench.action.replaceInFiles")
+        
         if text:
             actions.insert(text)
 
