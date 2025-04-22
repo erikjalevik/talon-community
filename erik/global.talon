@@ -16,7 +16,7 @@ settings():
 tag(): user.full_mouse_grid_enabled
 
 key(alt-f5):
-    speech.toggle()
+    user.toggle_microphone()
 
 # --- Exports ---    
 
