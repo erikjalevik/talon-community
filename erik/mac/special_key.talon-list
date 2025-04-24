@@ -9,10 +9,11 @@ minus: minus
 slap: return
 enter: keypad_enter
 page down: pagedown
-page don: pagedown
+descend: pagedown
 page up: pageup
-page sup: pageup
+ascend: pageup
 escape: escape
+scape: escape
 space: space
 took: tab
 back: backspace
