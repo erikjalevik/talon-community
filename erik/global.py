@@ -16,3 +16,15 @@ class Actions:
             actions.sound.set_microphone("None")
             actions.speech.disable()
             app.notify("Microphone disabled and Talon put to sleep")
+
+    def delete_word_left_n(n: int):
+        """Delete left n words"""
+        for _ in range(n):
+            actions.edit.extend_word_left()
+        actions.edit.delete()
+
+    def delete_word_right_n(n: int):
+        """Delete right n words"""
+        for _ in range(n):
+            actions.edit.extend_word_right()
+        actions.edit.delete()
