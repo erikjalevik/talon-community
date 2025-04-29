@@ -168,10 +168,6 @@ a sink return: "(--"
 # Cursor
 finish: key(f6)
 
-# VSCode
-(tab | tub | top) right: key(ctrl-cmd-right)
-(tab | tub | top) left: key(ctrl-cmd-left)
-chat switch: key(ctrl-=)
 
 # Other
 to be done: "// TODO: "

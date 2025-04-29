@@ -27,6 +27,7 @@ panel problems: user.vscode("workbench.panel.markers.view.focus")
 panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
 panel editor: user.vscode("workbench.action.focusActiveEditorGroup")
+chat switch: key(ctrl-=)
 
 # Settings
 settings show: user.vscode("workbench.action.openGlobalSettings")
@@ -69,6 +70,8 @@ go mark previous: user.vscode("bookmarks.jumpToPrevious")
 # Editors
 (tab | tub | top) close other: user.vscode("workbench.action.closeOtherEditors")
 (tab | tub | top) close all: user.vscode("workbench.action.closeAllEditors")
+(tab | tub | top) right: key(ctrl-cmd-right)
+(tab | tub | top) left: key(ctrl-cmd-left)
 
 # Debugging
 break point: user.vscode("editor.debug.action.toggleBreakpoint")
