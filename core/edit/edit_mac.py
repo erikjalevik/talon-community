@@ -164,7 +164,10 @@ class EditActions:
     def select_line(n: int = None):
         if n is not None:
             actions.edit.jump_line(n)
-        actions.key("cmd-right cmd-shift-left")
+        # The default of actions.key("cmd-right cmd-shift-left") opens another editor
+        # to the right in VSCode when triggered in the Cmd-P field for some reason.
+        # The following combo doesn't.
+        actions.key("cmd-left shift-down")
         # action(edit.select_lines(a: int, b: int)):
 
     def select_none():
