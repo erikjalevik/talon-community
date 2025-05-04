@@ -1,5 +1,6 @@
 mode: command
 mode: dictation
+language: no_NO
 -
 copy to vocab [as <phrase>]$: user.add_selection_to_vocabulary(phrase or "")
 # Automatically adds possessive form by appending "'s".
