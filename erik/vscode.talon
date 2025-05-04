@@ -11,7 +11,14 @@ tag(): user.command_search
 window reload: user.vscode("workbench.action.reloadWindow")
 window close: user.vscode("workbench.action.closeWindow")
 
-# Sidebar
+# Editors
+(tab | tub | top) close other: user.vscode("workbench.action.closeOtherEditors")
+(tab | tub | top) close all: user.vscode("workbench.action.closeAllEditors")
+(tab | tub | top) right: key(ctrl-cmd-right)
+(tab | tub | top) left: key(ctrl-cmd-left)
+editor focus: user.vscode("workbench.action.focusActiveEditorGroup")
+
+# Sidebar (primary)
 bar explore: user.vscode("workbench.view.explorer")
 bar extensions: user.vscode("workbench.view.extensions")
 bar outline: user.vscode("outline.focus")
@@ -19,15 +26,19 @@ bar run: user.vscode("workbench.view.debug")
 bar search: user.vscode("workbench.view.search")
 bar source: user.vscode("workbench.view.scm")
 bar test: user.vscode("workbench.view.testing.focus")
-bar switch: user.vscode("workbench.action.toggleSidebarVisibility")
+bar references: user.vscode("workbench.view.extension.references-view")
+bar focus: user.vscode("workbench.action.focusSideBar")
+bar toggle: user.vscode("workbench.action.toggleSidebarVisibility")
+
+# Sidebar (secondary)
+chat focus: user.vscode("workbench.action.focusAuxiliaryBar")
+chat toggle: key(ctrl-=)
 
 # Panels
 panel output: user.vscode("workbench.panel.output.focus")
 panel problems: user.vscode("workbench.panel.markers.view.focus")
-panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.action.terminal.focus")
-panel editor: user.vscode("workbench.action.focusActiveEditorGroup")
-chat switch: key(ctrl-=)
+panel toggle: user.vscode("workbench.action.togglePanel")
 
 # Settings
 settings show: user.vscode("workbench.action.openGlobalSettings")
@@ -66,12 +77,6 @@ bar marks: user.vscode("workbench.view.extension.bookmarks")
 mark toggle: user.vscode("bookmarks.toggle")
 go mark next: user.vscode("bookmarks.jumpToNext")
 go mark previous: user.vscode("bookmarks.jumpToPrevious")
-
-# Editors
-(tab | tub | top) close other: user.vscode("workbench.action.closeOtherEditors")
-(tab | tub | top) close all: user.vscode("workbench.action.closeAllEditors")
-(tab | tub | top) right: key(ctrl-cmd-right)
-(tab | tub | top) left: key(ctrl-cmd-left)
 
 # Debugging
 break point: user.vscode("editor.debug.action.toggleBreakpoint")
