@@ -28,3 +28,15 @@ class Actions:
         for _ in range(n):
             actions.edit.extend_word_right()
         actions.edit.delete()
+
+    def focus_window_with(app_substring: str, title_substring: str):
+        """Focuses the first window whose title contains the given substring."""
+        for window in ui.windows():
+            if app_substring in window.app.name and title_substring in window.title:
+                try:
+                    actions.user.switcher_focus_window(window)
+                    return
+                except RuntimeError as e:
+                    app.notify(f"Error focusing window: {e}")
+                    return
+        app.notify(f"No window found with app '{app_substring}' and title containing: '{title_substring}'")

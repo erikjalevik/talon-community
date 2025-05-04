@@ -168,6 +168,12 @@ a sink return: "(--"
 # Cursor
 finish: key(f6)
 
+# Special windows
+focus yellow: user.focus_window_with("Code","— notes")
+focus red: user.focus_window_with("Cursor","fileside2")
+focus green: user.focus_window_with("Cursor","talon-community")
+focus purple: user.focus_window_with("Cursor","frontends (Workspace)")
+focus blue: user.focus_window_with("Cursor","firestore-api")
 
 # Other
 to be done: "// TODO: "
