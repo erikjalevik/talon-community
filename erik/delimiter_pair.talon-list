@@ -13,7 +13,7 @@ os: mac
 round: ( )
 box: [ ]
 diamond: < >
-curly: { }
+chick: { }
 sticks: "' '"
 dogs: '" "'
 skis: ` `
