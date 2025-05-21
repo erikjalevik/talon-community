@@ -3,7 +3,6 @@ os: mac
 language: en
 -
 
-alt: alt
 control: ctrl
 troll: ctrl
 shift: shift
