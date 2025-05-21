@@ -151,7 +151,6 @@ fourfold: core.repeat_command(3)
 fivefold: core.repeat_command(4)
 repeat <number_small> [(times | ex)]: core.repeat_command(number_small)
 
-
 # --- Additions ---
 
 # Arrow keys
@@ -167,12 +166,14 @@ a sink return: "(--"
 
 # Cursor
 finish: key(f6)
+finish next: key(cmd-f6)
 
 # Special windows
 focus yellow: user.focus_window_with("Code","— notes")
 focus red: user.focus_window_with("Cursor","fileside2")
-focus green: user.focus_window_with("Cursor","talon-community")
-focus purple: user.focus_window_with("Cursor","frontends (Workspace)")
+focus orange: user.focus_window_with("Cursor","fileside-site")
+focus green: user.focus_window_with("Cursor","talon-community|cursorless-settings")
+focus purple: user.focus_window_with("Cursor","frontends \(Workspace\)")
 focus blue: user.focus_window_with("Cursor","firestore-api|api-gateway")
 
 # Other
