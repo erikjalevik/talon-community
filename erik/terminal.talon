@@ -1,4 +1,4 @@
-lang: no_NO
+os: mac
 tag: terminal
 -
 # tags should be activated for each specific terminal in the respective talon file
@@ -15,6 +15,7 @@ run last: user.terminal_run_last()
 rerun [<user.text>]: user.terminal_rerun_search(text or "")
 rerun search: user.terminal_rerun_search("")
 kill all: user.terminal_kill_all()
+rim raff: insert('rm -rf ')
 
 copy paste:
     edit.copy()
