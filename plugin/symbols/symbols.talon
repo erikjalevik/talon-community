@@ -1,3 +1,5 @@
+lang: no_NO
+-
 new line: "\n"
 double dash: "--"
 triple quote: "'''"

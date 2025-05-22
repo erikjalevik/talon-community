@@ -151,6 +151,15 @@ fourfold: core.repeat_command(3)
 fivefold: core.repeat_command(4)
 repeat <number_small> [(times | ex)]: core.repeat_command(number_small)
 
+# Multi-char symbols
+
+arrow: "->"
+dub arrow: "=>"
+scomma: ", "
+speriod: ". "
+
+<user.delimiter_pair>: user.delimiter_pair_insert(delimiter_pair)
+
 # --- Additions ---
 
 # Arrow keys
