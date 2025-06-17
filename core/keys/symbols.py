@@ -54,8 +54,8 @@ currency_symbols = [
 ]
 
 symbols = [
-    Symbol("`", ["back tick"], ["grave"]),
-    Symbol(",", ["comma", "coma"]),
+    Symbol("`", ["back tick"], ["grave", "ski"]),
+    Symbol(",", ["comma"]),
     Symbol(".", ["period", "full stop"], ["dot", "point"]),
     Symbol(";", ["semi"]),
     Symbol(":", ["cold cut"]),
@@ -83,8 +83,8 @@ symbols = [
     Symbol(">", None, ["rangle", "greater than"]),
     Symbol("^", None, ["caret", "circumflex"]),
     Symbol("|", None, ["pipe"]),
-    Symbol("'", None, ["apostrophe", "single quote", "sing quote"]),
-    Symbol('"', None, ["quote", "double quote"]),
+    Symbol("'", None, ["apostrophe", "single quote", "sing quote", "stick"]),
+    Symbol('"', None, ["quote", "double quote", "dog"]),
 ]
 
 # by convention, symbols should include currency symbols
