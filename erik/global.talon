@@ -3,7 +3,7 @@ os: mac
 
 settings():
     speech.timeout = 0.4
-    user.listening_timeout_minutes = 3
+    user.listening_timeout_minutes = -1
     user.window_snap_screen = "proportional"
     user.subtitles_size = 80
     user.subtitles_show = true
